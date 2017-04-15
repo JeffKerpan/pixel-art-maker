@@ -1,3 +1,4 @@
+/*To set the size and color of the tiles*/
 .tiles {
   height: 18px;
   width: 18px;
@@ -6,24 +7,37 @@
   background-color: white;
 }
 
+ /*To get the propper size of the tiles*/
 .container {
   height: 500px;
   width: 500px;
   background-color: blue;
 }
 
+/*To set a gray palette below the tiles*/
 .palette {
   height: 36px;
   width: 500px;
   background-color: gray;
+  border: black 1px solid;
 }
 
+/*To set the circles separate of the colors*/
 .circle{
   height: 36px;
   width: 36px;
   float: left;
   border-radius: 50%;
   right: 20%;
+  position: static;
+}
+
+/*To set the brush color indicator and make it a square instead of a circle*/
+.square {
+  height: 36px;
+  width: 36px;
+  float: right;
+  /*left:10%;*/
 }
 .red {
   background-color: red;

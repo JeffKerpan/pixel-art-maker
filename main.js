@@ -51,6 +51,10 @@ var violet = document.createElement('div');
 palette.appendChild(violet);
 violet.className = 'violet circle';
 
+var currentCircle = document.createElement('div');
+palette.appendChild(currentCircle);
+currentCircle.className = 'currentCircle square';
+currentCircle.style.backgroundColor = 'white';
 
 var brush = {
   color: '#000000'
@@ -60,6 +64,7 @@ palette.addEventListener('click', getColor);
 function getColor(event){
   console.log(event.target.className);
   brush.color = event.target.className.replace('circle', '');
+  currentCircle.style.backgroundColor = brush.color;
 }
 
 
